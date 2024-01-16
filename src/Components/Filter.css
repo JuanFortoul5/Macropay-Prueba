@@ -1,0 +1,123 @@
+.filter-sidebar{
+    width: 350px;
+    min-height: 600px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.filter{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.filter-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px 20px 20px;
+    border-bottom: 1px solid #EBEFF4;
+}
+.filter-section.brand{
+    padding-bottom: 0px;
+}
+.section-name{
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 16px;
+    color: #013E9B;
+}
+
+.brand-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+    height: 200px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #2B3445;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.brand-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.brand-container::-webkit-scrollbar-track {
+    background-color: #D8E0E9;
+    border-radius: 10px;
+}
+
+.brand-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #4B566B;
+}
+.single-brand{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.input-checkbox{
+    width: 20px;
+    height: 20px;
+    border: 0.1px solid #4B566B;
+}
+.price-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D8E0E9;
+}
+.input-price{
+    width: 141px;
+    height: 44px;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    border: 0.5px solid #D8E0E9;
+    outline: none;
+}
+.reviews-container{
+    display: flex;
+    gap: 3px;
+    font-size: 20px;
+    color: #FFD300;
+}
+.categories-container{
+    display: flex;
+    height: 47px;
+    border-radius: 5px;
+    border: 2px solid #8b95a7;
+}
+.orderBy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #8b95a7;
+}
+.orderBy-Title{
+    margin: 0;
+}
+.categories{
+    flex: 4;
+    height: 100%;
+}
+.categories-select{
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans Semibold', sans-serif;
+    font-size: 18px;
+    color: #8b95a7;
+    border: none;
+    border-left: 2px solid #8b95a7;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+}

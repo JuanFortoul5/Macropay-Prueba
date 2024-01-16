@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: "Avenir LT Std 95 black";  
+  src: local("Avenir LT Std 95 black"),
+    url("./Fonts/avenir_lt_std_95_black.woff") format("woff");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "Avenir LT Std Medium";  
+  src: local("Avenir LT Std 55 Roman"),
+    url("./Fonts/avenir_lt_std_55_roman.woff") format("woff");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Open Sans";  
+src: local("Open Sans"),
+  url("./Fonts/OpenSans-Regular.woff") format("woff");
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: "Open Sans Semibold";  
+src: local("Open Sans Semibold"),
+  url("./Fonts/OpenSans-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans Bold";  
+src: local("Open Sans Bold"),
+  url("./Fonts/OpenSans-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans Extrabold";  
+src: local("Open Sans Extrabold"),
+  url("./Fonts/OpenSans-ExtraBold.woff") format("woff");
+}
+.App{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: space-between;
 }

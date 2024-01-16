@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Apple",
+    "id": "1"
+  },
+  {
+    "name": "Samsung",
+    "id": "2"
+  },
+  {
+    "name": "Xiaomi",
+    "id": "3"
+  },
+  {
+    "name": "Huawei",
+    "id": "11"
+  },
+  {
+    "name": "Oppo",
+    "id": "4"
+  },
+  {
+    "name": "Sony",
+    "id": "5"
+  },
+  {
+    "name": "Tecno",
+    "id": "6"
+  },
+  {
+    "name": "RedMagic",
+    "id": "7"
+  },
+  {
+    "name": "Lenovo",
+    "id": "8"
+  },
+  {
+    "name": "Google",
+    "id": "9"
+  },
+  {
+    "name": "Motorola",
+    "id": "10"
+  }
+]
