@@ -30,14 +30,18 @@
     width: 100%;
     height: fit-content;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 
 }
 .productDescription-gallery{
     display: flex;
+    justify-content: center;
     gap: 20px;
     flex: 2;
+    width: 100%;
 }
+
 .gallery-images-container{
     display: flex;
     flex-direction: column;
@@ -99,11 +103,14 @@
     flex-direction: column;
     justify-content: space-between; 
     gap: 20px; 
+    width: 100%;
 }
 .productDescription-column-two{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .productDescription-price{
     font-family: 'Open Sans Bold';
@@ -132,7 +139,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
 }
 .description-text{
     color: #2B3445;
@@ -195,8 +202,9 @@
     position: relative;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    width: 550px;
+    min-width: 380px;
     border-radius: 10px;
+    flex: 3;
 
 }
 .pay-steps{
@@ -205,7 +213,16 @@
     justify-content: center;
     flex-direction: column;
     gap: 15px;
+    flex: 1;
+    padding: 0px 20px;
+    position: relative;
 }
+.pay-steps.first{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    clip-path: inset(0px -15px 0px 0px);
+    z-index: 2;
+}
+
 
 .steps-circle{
     background-color: #4B566B;
@@ -218,6 +235,18 @@
     border: none;
     font-family: 'Open Sans Bold';
     color: white;
+}
+.steps-rightArrow{
+    position: absolute;
+    color: #FFD300;
+    font-size: 50px;
+    font-weight: 900;
+    z-index: 99;
+    top: 50%;
+    left: -3px;
+    line-height: 0;
+    text-align: center;
+    z-index: 1;
 }
 .pay-credit-button{
     position: absolute;
@@ -236,6 +265,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    z-index: 2;
 }
 .pay-credit-button i{
     width: 35px;
@@ -248,4 +278,93 @@
     justify-content: center;
     align-items: center;
     font-size: 22px;
+}
+.payBanner-container{
+    flex: 1;
+    min-width: 130px;
+    height: 100%;
+    background-color: #2B3445;
+    position: relative;
+
+}
+.payBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.payBanner-left{
+    width: 175px;
+    height: 175px;
+    border-bottom: 3px solid #013E9B;
+    border-left: 3px solid #013E9B;
+    border-top: none;
+    border-right: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 10px;
+}
+.payBanner-circle{
+    width: 95%;
+    height: 95%;
+    background-color: #FFD300;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans Bold';
+    font-size: 60px;
+}
+@media (max-width: 950px){
+    .productDescription-gallery{
+        flex-wrap: wrap;
+    }
+    .gallery-images-container{
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .imageFocus-container{
+        width: 100%;
+        height: auto;
+    }
+    .imageFocus-gallery {
+        width: 100%;
+        height: auto;
+    }
+    .image-gallery {
+        width: 100px;
+        height: 100px;
+    }
+    .product-description-container{
+        flex-wrap: wrap;
+    }
+    .productDescription-title{
+        font-size: 30px;
+    }
+    .pay-steps-container{
+        min-width: auto;
+    }
+    .pay-container{
+        flex-wrap: wrap;
+    }
+    .payBanner-container{
+        min-width: 100%;
+    }
+    .pay-steps-container{
+        flex-direction: column;
+    }
+    .securePay-button{
+        width: 100%;
+        padding: 0;
+    }
+    
 }

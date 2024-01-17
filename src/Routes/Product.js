@@ -81,7 +81,7 @@ function Product(){
                 </div>
             </div>
             <div className='section-text-description'>
-                <p className='description-text'>Lorem ipsum</p>
+                <p className='description-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco....</p>
                 <a className='more'>- Ver mas -</a>
             </div>
             <div className='securePay-container'>
@@ -97,17 +97,33 @@ function Product(){
             </div>
             <div className='due-date'><p>La promoción vence en 24d 12h:43m</p></div>
             <div className='pay-container'>
-                <div className='payBanner-container'></div>
+                <div className='payBanner-container'>
+                    <div className='payBaner-bg'>
+                        <p>.....</p>
+                    </div>
+                    <div className='payBanner'>
+                        <div className='payBanner-left'>
+                            <p className='payBanner-circle'>Hoy</p>
+                        </div>
+                        <div className='payBanner-right'>
+                            <p className='description-text small'>Desde</p>
+                            <p className='payBanner-price'>$196</p>
+                            <p className='description-text'>SEMANAL</p>
+                        </div>
+                    </div>
+                </div>
                 <div className='pay-steps-container'>
                     <div className='pay-steps first'>
                         <div className='steps-circle'>1</div>
                         <p className='description-text bold' >Aplica a tu crédito!</p>
                     </div>
                     <div className='pay-steps first'>
+                        <div className='steps-rightArrow'>&#8250;</div>
                         <div className='steps-circle'>2</div>
                         <p className='description-text bold'>Verifica tu compra</p>
                     </div>
                     <div className='pay-steps'>
+                        <div className='steps-rightArrow'>&#8250;</div>
                         <div className='steps-circle'>3</div>
                         <p className='description-text bold'>Disfruta tu celular</p>
                     </div>
