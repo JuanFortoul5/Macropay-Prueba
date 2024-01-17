@@ -28,6 +28,11 @@ src: local("Open Sans Bold"),
 src: local("Open Sans Extrabold"),
   url("./Fonts/OpenSans-ExtraBold.woff") format("woff");
 }
+@font-face {
+  font-family: "Impact";  
+src: local("Impact"),
+  url("./Fonts/impact.woff") format("woff");
+}
 .App{
   display: flex;
   flex-direction: column;

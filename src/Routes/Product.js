@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import demo from '../Components/demo.json'
 import './Product.css'
 import { useParams } from 'react-router-dom';
+import InformationLabel from '../Components/InformationLabel';
 
 function Product(){
     const params = useParams();
@@ -39,7 +40,7 @@ function Product(){
 
 
     console.log(product.fabricante)
-  return <section className='Product-container'>
+  return <section className='Home-container'>
       <div className='topBar-container'>
         <button className='topBar-button'>Volver a resultados</button>
         <p className='topBar-url'>Celulares / {product.fabricante} / <strong>{product.nombre}</strong></p>
@@ -103,12 +104,12 @@ function Product(){
                     </div>
                     <div className='payBanner'>
                         <div className='payBanner-left'>
-                            <p className='payBanner-circle'>Hoy</p>
+                            <p className='payBanner-circle'>HOY</p>
                         </div>
                         <div className='payBanner-right'>
-                            <p className='description-text small'>Desde</p>
-                            <p className='payBanner-price'>$196</p>
-                            <p className='description-text'>SEMANAL</p>
+                            <p className='payBanner-text-small'>DESDE</p>
+                            <p className='payBanner-price'>$<strong className='price-long'>196</strong></p>
+                            <p className='payBanner-text'>SEMANAL</p>
                         </div>
                     </div>
                 </div>
@@ -119,11 +120,17 @@ function Product(){
                     </div>
                     <div className='pay-steps first'>
                         <div className='steps-rightArrow'>&#8250;</div>
+                        
+                        <div className='steps-downArrow'><i className="fa-solid fa-chevron-down"></i></div>
+
                         <div className='steps-circle'>2</div>
                         <p className='description-text bold'>Verifica tu compra</p>
                     </div>
                     <div className='pay-steps'>
                         <div className='steps-rightArrow'>&#8250;</div>
+                        
+                        <div className='steps-downArrow'><i className="fa-solid fa-chevron-down"></i></div>
+
                         <div className='steps-circle'>3</div>
                         <p className='description-text bold'>Disfruta tu celular</p>
                     </div>
@@ -131,6 +138,32 @@ function Product(){
                 </div>
             </div>
         </div>  
+      </div>
+      <div className='subtitle-container'>
+        <h2 className='subtitle'>Información Detallada del Producto</h2>
+      </div>
+      <div className='product-detail-container'>
+        <div className='product-images-container'>
+            {gallery.map((image) => {
+                return <img src={image.image} alt={product.nombre} className='product-detail-image'></img>
+            })}
+        </div>
+        <div className='product-information-container'>
+            <div className='product-top-menu'>
+                <p className='activeButton'>Otras Especificaciones</p>
+                <p>Reviews(3)</p>
+            </div>
+            <InformationLabel title='Fabricante' Product={product.fabricante} ></InformationLabel>
+            <InformationLabel title='Peso del Producto' Product={product.peso} ></InformationLabel>
+            <InformationLabel title='Dimensiones' Product={product.dimensiones} ></InformationLabel>
+            <InformationLabel title='Pais de Origen' Product={product.pais} ></InformationLabel>
+            <InformationLabel title='Numero de Modelo' Product={product.modelo} ></InformationLabel>
+            <InformationLabel title='Color' Product={product.color} ></InformationLabel>
+            <InformationLabel title='Material' Product={product.material} ></InformationLabel>
+            <InformationLabel title='Cantidad de Piezas' Product={product.piezas} ></InformationLabel>
+            <InformationLabel title='Caracteristicas Especiales' Product={product.caracteristicas} ></InformationLabel>
+            <InformationLabel title='Componentes Incluidos' Product={product.incluye} ></InformationLabel>
+        </div>
       </div>
     
   </section>   
