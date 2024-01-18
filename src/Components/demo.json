@@ -103,7 +103,7 @@
       {
         "nombre": "Iphone 11 Pro Max",
         "url": "iphone_11_pro_max",
-        "fabricante": ["all" ,"Apple"],
+        "fabricante": "Apple",
         "peso": "75gr",
         "dimensiones": "11 x 10 x 0.4 pulgadas",
         "pais": "USA",

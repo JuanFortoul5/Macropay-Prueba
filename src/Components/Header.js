@@ -19,7 +19,7 @@ function Header(){
         setIsOpen(false)
     }
 
-    return <div className="Header-container">
+    return <div className="Header-container" id="Header-container">
                 <div className="upper-container">
                     <div className="Header-upper">
                         <div className="Header-logo">

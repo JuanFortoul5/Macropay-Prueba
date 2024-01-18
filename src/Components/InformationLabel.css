@@ -1,0 +1,140 @@
+.product-information{
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    min-height: 800px;
+    width: 100%;
+}
+.product-images-container.left{
+    gap: 20px;
+    min-width: 200px;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+.productInformation-image{
+    width: 280px;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.informationColumn.right{
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    min-height: 800px;
+    width: 100%;
+    flex: 1;
+    gap: 20px;
+}
+.product-top-menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    border-bottom: 1px solid #2B3445;
+    color: #2B3445;
+}
+
+.activeButton{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    border-bottom: 3px solid #004AC1;
+    font-family: 'Open Sans Bold';
+    margin: 0;
+}
+.informationRow{
+    display: flex;
+    gap: 20px;
+}
+.informationRow.upper{
+    flex: 1;
+    flex-direction: column;
+}
+
+.informationRow.lower{
+    background: linear-gradient(180deg, #004AC1, #0744A8);
+    border-radius: 13px;
+    padding: 0px 0px 0px 20px;
+    flex: 1;
+}
+.informationDetail-container{
+    display: flex;
+    height: 100%;
+    gap: 20px;
+}
+.informationDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.informationDetail p{
+    margin: 0;
+    padding: 0;
+    line-height: 1.9;
+    
+}
+.informationDetail.left{
+    flex: 1;
+    padding: 0px 0px 0px 0px;
+}
+.informationDetail.right{
+    flex: 2 ;
+}
+.column.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title-italic{
+    font-family: 'Open Sans Italic';
+    font-size: 28px;
+    color: white;
+    margin: 0;
+}
+.subtitle-detail{
+    font-family: 'Open Sans';
+    font-size: 22px;
+    color: #FFD300;
+}
+.detail-list-requires{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.list-requires{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: white;
+}
+.list-requires i{
+    color: #A2D456;
+    font-size: 25px;
+}
+.list-requires p{
+    margin: 0;
+}
+
+@media ( max-width: 1200px){
+    .product-information{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .informationColumn.right{
+        min-width: 300px;
+    }
+    .informationDetail-container{
+        flex-direction: column;
+    }
+    .informationRow.lower{
+        flex-direction: column;
+    }
+}

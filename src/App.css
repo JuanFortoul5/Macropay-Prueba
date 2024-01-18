@@ -29,6 +29,11 @@ src: local("Open Sans Extrabold"),
   url("./Fonts/OpenSans-ExtraBold.woff") format("woff");
 }
 @font-face {
+  font-family: "Open Sans Italic";  
+src: local("Open Sans Italic"),
+  url("./Fonts/OpenSans-Italic.woff") format("woff");
+}
+@font-face {
   font-family: "Impact";  
 src: local("Impact"),
   url("./Fonts/impact.woff") format("woff");

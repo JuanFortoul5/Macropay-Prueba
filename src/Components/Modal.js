@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import phoneImg from '../Resources/Demo/samsung/galaxy-s21.png'
 import './Modal.css';
 
 function Modal(item){

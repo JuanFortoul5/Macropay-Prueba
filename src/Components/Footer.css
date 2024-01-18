@@ -151,6 +151,15 @@
     width: 100%;
     gap: 35px;
 }
+.smileFace{
+    mask-image: url('../Resources/material/Happy_face.svg');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    background: linear-gradient(180deg, #004AC1, #0744A8);
+    width: 140px;
+    height: 140px;
+}
 @media (max-width: 720px){
     
     .columns-container{

@@ -3,6 +3,7 @@ import demo from '../Components/demo.json'
 import './Product.css'
 import { useParams } from 'react-router-dom';
 import InformationLabel from '../Components/InformationLabel';
+import ProductCard from '../Components/ProductCard';
 
 function Product(){
     const params = useParams();
@@ -143,28 +144,16 @@ function Product(){
         <h2 className='subtitle'>Información Detallada del Producto</h2>
       </div>
       <div className='product-detail-container'>
-        <div className='product-images-container'>
-            {gallery.map((image) => {
-                return <img src={image.image} alt={product.nombre} className='product-detail-image'></img>
+        <InformationLabel Product={product} gallery={gallery}></InformationLabel>
+      </div>
+      <div className='subtitle-container center'>
+        <h2 className='subtitle'>Productos Relacionados</h2>
+      </div>
+      <div className='item-container'>
+            {demo.filter(demo => demo.fabricante === product.fabricante ).map((demo)=>{
+                return <ProductCard Product={demo} key={demo.modelo}></ProductCard>
             })}
         </div>
-        <div className='product-information-container'>
-            <div className='product-top-menu'>
-                <p className='activeButton'>Otras Especificaciones</p>
-                <p>Reviews(3)</p>
-            </div>
-            <InformationLabel title='Fabricante' Product={product.fabricante} ></InformationLabel>
-            <InformationLabel title='Peso del Producto' Product={product.peso} ></InformationLabel>
-            <InformationLabel title='Dimensiones' Product={product.dimensiones} ></InformationLabel>
-            <InformationLabel title='Pais de Origen' Product={product.pais} ></InformationLabel>
-            <InformationLabel title='Numero de Modelo' Product={product.modelo} ></InformationLabel>
-            <InformationLabel title='Color' Product={product.color} ></InformationLabel>
-            <InformationLabel title='Material' Product={product.material} ></InformationLabel>
-            <InformationLabel title='Cantidad de Piezas' Product={product.piezas} ></InformationLabel>
-            <InformationLabel title='Caracteristicas Especiales' Product={product.caracteristicas} ></InformationLabel>
-            <InformationLabel title='Componentes Incluidos' Product={product.incluye} ></InformationLabel>
-        </div>
-      </div>
     
   </section>   
 }

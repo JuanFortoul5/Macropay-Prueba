@@ -1,8 +1,7 @@
 import React from "react";
 import './Footer.css';
 import Logo from '../Resources/logos/Grupo 5.svg'
-import waveBack from '../Resources/material/waveBack.svg'
-import wave from '../Resources/material/wave.svg'
+import smileFace from '../Resources/material/Happy_face.svg'
 
 function Footer(){
     return <footer className="footer-container">
@@ -36,7 +35,7 @@ function Footer(){
                 </div>
             </div>
             <div className="footer-column-two">
-                <p>:)</p>
+                <div className="smileFace"></div>
             </div>
             <div className="footer-column-three">
                 <h3 className="footer-contact-title">Conversemos!</h3>
